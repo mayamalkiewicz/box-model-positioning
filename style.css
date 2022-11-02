@@ -1,56 +1,237 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(./Roboto/Roboto-Regular.ttf) format('truetype');
+}
+
 * {
-    box-sizing: border-box;
+    /*border:rgb(26, 255, 68) 2px solid; */
+    font-family: Roboto, Verdana, 'Trebuchet MS',sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
 }
 
 html, body {
     margin: 0px;
     padding: 0px;
-
 }
 
 header {
-    margin: 0px;
-    padding: 0px;
-    background-color: rgb(255, 196, 0);
+    top: 0px;
+    margin: 0px 0px;
+    padding: 10px 0px;
+    background-color: rgb(255, 255, 255);
     position: fixed;
     width: 100%;
     z-index: 1;
     overflow: visible;
 }
+
 
 nav {
     margin-top: 0px;
     padding: 0px;
     overflow: visible;
     position: static;
-    background-color: aqua;
+    text-align: center;
 }
 
 nav li {
     margin: 0px;
     padding: 0px 0px;
+    width: 120px;
     overflow: visible;
     position: static;
     display: inline-block;
     position: relative;
-    background-color: beige;
+    color:rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+
+
+.main-img {
+    background-image: url(https://divisare-res.cloudinary.com/images/dpr_3.0,f_auto,q_auto,w_400/v1527586180/mzqzhzdpmkof2b3zol8s/selgascano-iwan-baan-brugge-triennale-pavilion.jpg);
+    height: 800px;
+    background-size: cover;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    position: relative;
+    
+}
+
+
+main h2 {
+    font-size: 25px;
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 60px 20px;
+    margin: 0px 400px;
+    position: relative;
+    top: 60px;
+
+}
+
+main h1 {
+    font-size: 80px;
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 20px 20px;
+    margin: 0px 400px;
+    margin-bottom: 50px;
+    position: relative;
+    top: 60px;
+}
+
+.main-btn {
+    padding: 20px 60px;
+    background-color:  rgb(255, 255, 255);
+    text-decoration: none;
+    color: rgb(255, 0, 132);
+    position: relative;
+    top: 150px;
+   
+}
+
+.main-img2 {
+    background-image: url(https://images.adsttc.com/media/images/500d/ee90/28ba/0d66/2500/1bd3/slideshow/stringio.jpg?1361391686);
+    height: 800px;
+    background-size: cover;
+    color: rgb(68, 68, 68);
+    position: relative;
+    margin-top: 0px;
+
+
+}
+
+.main-img2 p {
+    text-align: justify;
+    background-color: rgb(255, 255, 255, 0.9);
+    position: relative;
+    margin: 0px 0px;
+    top: 100px;
+    left: 800px;
+    width: 500px;
+    height: 100;
+    padding: 10px;
+    line-height: 1.4;
+    color: black;
+    overflow: scroll;
+}
+
+.about-btn {
+    padding: 20px 60px;
+    background-color:  rgb(255, 255, 255, 0.9);
+    text-decoration: none;
+    color: rgb(99, 76, 0);
+    position: relative;
+    top: 150px;
+    left: 950px;
+    border:rgb(255, 196, 0) 1px solid;
+}
+
+a:hover.about-btn {
+    padding: 20px 60px;
+    background-color:  rgb(255, 255, 255);
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 150px;
+    border:rgb(255, 196, 0) 1px solid;
 }
 
 img {
     width: 100%;
 }
 
-main {
 
-    margin-top: 0px;
+
+main {
     padding: 0px;
+    margin: 0px;
+    position: relative;
+    top: 50px;
+}
+
+h3 {
+    color:rgb(255, 196, 0);
+    position: absolute;
+    padding: 0px;
+    margin-top: 100px;
+    margin-left: 100px;
+    font-size: 90px;
+}
+
+
+
+section {
     position: relative;
     text-align: center;
+    top: 0px;
+    padding: 0px 0px;
+    margin: 100px 0px 0px;
+}
+
+#projects h3 {
+    color:rgb(255, 196, 0);
+    position: relative;
+    margin: 50px;
+}
+
+.col {
+
+    text-align: center;
+    display: inline-block;
+    height: 80px;
+    max-width: 400px;
+    margin: 5px;
+    padding: 0px, 0px;
+}
+
+
+.section-btn {
+    padding: 15px 50px;
+    background-color:  rgb(255, 255, 255);
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border:rgb(0, 0, 0) 1px solid;
+    position: relative;
+    top: 40px;
+}
+
+.end {
+background-image: url(https://d37zoqglehb9o7.cloudfront.net/uploads/2020/04/serpentine_2015_03-1.jpg);
+background-size: cover;
+height: 900px;
+
+}
+
+.end p {
+    text-align: left;
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    color: white;
 }
 
 footer {
+    background-color: rgb(255, 255, 255);
     margin-bottom: 0px;
-    padding: 0px;
+    padding: 0px 0;
     position: fixed;
+    width: 100%;
     z-index: 1;
+    bottom: 0px;
 }
+
+footer p {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 10px;
+    color: rgb(0, 0, 0);
+    margin: 0px;
+    padding: 5px;
+
+}
+
