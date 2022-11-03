@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Roboto';
-    src: url(./Roboto/Roboto-Regular.ttf) format('truetype');
+    src: url(./Roboto/Roboto-Light.ttf) format('truetype'),
+    src: url(./Roboto/Roboto-Bold.ttf) format('truetype');
 }
 
 * {
     /*border:rgb(26, 255, 68) 2px solid; */
     font-family: Roboto, Verdana, 'Trebuchet MS',sans-serif;
 }
-
 
 a {
     text-decoration: none;
@@ -51,9 +51,14 @@ nav li {
     text-transform: uppercase;
 }
 
+main {
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    top: 60px;
+}
 
-
-.main-img {
+.start-img {
     background-image: url(https://divisare-res.cloudinary.com/images/dpr_3.0,f_auto,q_auto,w_400/v1527586180/mzqzhzdpmkof2b3zol8s/selgascano-iwan-baan-brugge-triennale-pavilion.jpg);
     height: 800px;
     background-size: cover;
@@ -64,18 +69,19 @@ nav li {
 }
 
 
-main h2 {
+#start-pg h2 {
     font-size: 25px;
     background-color: rgb(255, 255, 255, 0.5);
-    padding: 60px 20px;
+    padding: 40px 20px;
     margin: 0px 400px;
     position: relative;
     top: 60px;
 
 }
 
-main h1 {
+#start-pg h1 {
     font-size: 80px;
+    font-weight: 900;
     background-color: rgb(255, 255, 255, 0.5);
     padding: 20px 20px;
     margin: 0px 400px;
@@ -84,17 +90,25 @@ main h1 {
     top: 60px;
 }
 
-.main-btn {
+.start-btn {
+    padding: 20px 60px;
+    background-color:  rgb(255, 255, 255, 0.6);
+    text-decoration: none;
+    color: rgb(255, 0, 132);
+    position: relative;
+    top: 150px;
+}
+
+a:hover.start-btn {
     padding: 20px 60px;
     background-color:  rgb(255, 255, 255);
     text-decoration: none;
     color: rgb(255, 0, 132);
     position: relative;
     top: 150px;
-   
 }
 
-.main-img2 {
+.about-img {
     background-image: url(https://images.adsttc.com/media/images/500d/ee90/28ba/0d66/2500/1bd3/slideshow/stringio.jpg?1361391686);
     height: 800px;
     background-size: cover;
@@ -105,15 +119,15 @@ main h1 {
 
 }
 
-.main-img2 p {
+.about-img p {
     text-align: justify;
     background-color: rgb(255, 255, 255, 0.9);
     position: relative;
-    margin: 0px 0px;
-    top: 100px;
     left: 800px;
+    top: 100px;
     width: 500px;
-    height: 100;
+    height: 150px;
+    margin: 0px 0px;
     padding: 10px;
     line-height: 1.4;
     color: black;
@@ -143,16 +157,9 @@ a:hover.about-btn {
 
 img {
     width: 100%;
+    padding: 30px 0px;
 }
 
-
-
-main {
-    padding: 0px;
-    margin: 0px;
-    position: relative;
-    top: 50px;
-}
 
 h3 {
     color:rgb(255, 196, 0);
@@ -163,42 +170,41 @@ h3 {
     font-size: 90px;
 }
 
-
-
-section {
-    position: relative;
+#projects {
+    padding-top: 100px;
+    padding-bottom: 200px;
     text-align: center;
-    top: 0px;
-    padding: 0px 0px;
-    margin: 100px 0px 0px;
+
 }
 
-#projects h3 {
+ .proj-header {
     color:rgb(255, 196, 0);
+    text-align: left;
     position: relative;
-    margin: 50px;
+    top: 0px;
+    margin: 0px 0px 0px;
 }
 
 .col {
-
     text-align: center;
     display: inline-block;
-    height: 80px;
+    position: static;
     max-width: 400px;
-    margin: 5px;
-    padding: 0px, 0px;
+    margin: 10px;
+    padding: 100px, 0px;
 }
 
 
-.section-btn {
+.projects-btn {
     padding: 15px 50px;
     background-color:  rgb(255, 255, 255);
     text-decoration: none;
     color: rgb(0, 0, 0);
     border:rgb(0, 0, 0) 1px solid;
-    position: relative;
-    top: 40px;
+    position: static;
+    margin: 0px;
 }
+
 
 .end {
 background-image: url(https://d37zoqglehb9o7.cloudfront.net/uploads/2020/04/serpentine_2015_03-1.jpg);
@@ -209,15 +215,16 @@ height: 900px;
 
 .end p {
     text-align: left;
-    position: absolute;
+    font-weight: 600;
+    position: relative;
     top: 300px;
     left: 300px;
     color: white;
+
 }
 
 footer {
     background-color: rgb(255, 255, 255);
-    margin-bottom: 0px;
     padding: 0px 0;
     position: fixed;
     width: 100%;
@@ -231,7 +238,7 @@ footer p {
     font-size: 10px;
     color: rgb(0, 0, 0);
     margin: 0px;
-    padding: 5px;
+    padding: 10px;
 
 }
 
